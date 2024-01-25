@@ -1,0 +1,335 @@
+body
+{
+    background-color: rgb(75, 75, 75);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    /* height: 100vh; */
+    /* margin-top: 500px; */
+    color: white;
+}
+
+.buttons, .formBlock
+{
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+.buttons div
+{
+    padding: 100px;
+}
+
+form
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+
+form *
+{
+    margin-bottom: 10px;
+}
+
+input
+{
+    padding: 10px;
+    background-color: rgb(36, 36, 36);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    transition: background-color .3s linear;
+    transition: color .1s linear;
+}
+
+input::placeholder
+{
+    color: rgb(155, 155, 155);
+}
+
+input:focus
+{
+    background-color: white;
+    color: black;
+}
+
+.registerButton
+{
+    padding: 10px;
+    background-color: rgb(25, 32, 25);
+    border: 2px solid rgb(159, 255, 159);
+    border-radius: 20px;
+    color: white;
+    transition: background-color 5s linear;
+    transition: color .1s linear;
+    width: 250px;
+    align-self: center;
+}
+
+.registerButton:hover
+{
+    background-color: rgb(159, 255, 159);
+    color: black;
+    box-shadow: 1px 1px 15px rgb(159, 255, 159);
+}
+
+.registerButton:active
+{
+    background-color: rgb(25, 32, 25);
+    color: white;
+}
+
+.loginButton
+{
+    padding: 10px;
+    background-color: rgb(38, 39, 27);
+    border: 2px solid rgb(234, 255, 159);
+    border-radius: 20px;
+    color: white;
+    transition: background-color 5s linear;
+    transition: color .1s linear;
+    width: 250px;
+    align-self: center;
+}
+
+.loginButton:hover
+{
+    background-color: rgb(234, 255, 159);
+    color: black;
+    box-shadow: 1px 1px 15px rgb(234, 255, 159);
+}
+
+.loginButton:active
+{
+    background-color: rgb(38, 39, 27);
+    color: white;
+}
+
+.home  img
+{
+    width: 50px;
+}
+
+.modalContainer, .hiddenTable
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modalWindow, .tableData
+{
+    margin: 0 auto;
+    background-color: rgb(200, 200, 200);
+    border-radius: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.modalWindow *, .tableData *
+{
+    align-self: center;
+
+}
+
+.tableData
+{
+    color: white;
+}
+
+.modalWindow label
+{
+    color: black;
+}
+
+#sendQrCodeButton, #sendEditDataButton
+{
+    padding: 10px;
+    background-color: rgb(27, 34, 39);
+    border: 2px solid rgb(152, 212, 255);
+    border-radius: 20px;
+    color: white;
+    transition: background-color 5s linear;
+    transition: color .1s linear;
+    width: 250px;
+    align-self: center;
+}
+
+#sendQrCodeButton:hover, #sendEditDataButton:hover
+{
+    background-color: rgb(152, 212, 255);
+    color: black;
+    box-shadow: 1px 1px 15px rgb(152, 212, 255);
+}
+
+#sendQrCodeButton:active, #sendEditDataButton:active
+{
+    background-color: rgb(27, 34, 39);
+    color: white;
+}
+
+#closeModal
+{
+    padding: 10px;
+    background-color: rgb(39, 27, 27);
+    border: 2px solid rgb(255, 152, 152);
+    border-radius: 20px;
+    color: white;
+    transition: background-color 5s linear;
+    transition: color .1s linear;
+    width: 250px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#closeModal:hover
+{
+    background-color: rgb(255, 152, 152);
+    color: black;
+    box-shadow: 1px 1px 15px rgb(255, 152, 152);
+}
+
+#closeModal:active
+{
+    background-color: rgb(39, 27, 27);
+    color: white;
+}
+
+#logoutButton
+{
+    padding: 10px;
+    background-color: rgb(39, 27, 27);
+    border: 2px solid rgb(255, 152, 152);
+    border-radius: 20px;
+    color: white;
+    transition: background-color 5s linear;
+    transition: color .1s linear;
+    width: 250px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#logoutButton:hover
+{
+    background-color: rgb(255, 152, 152);
+    color: black;
+    box-shadow: 1px 1px 15px rgb(255, 152, 152);
+}
+
+#logoutButton:active
+{
+    background-color: rgb(39, 27, 27);
+    color: white;
+}
+
+td, th 
+{
+    border: 1px solid black;
+}
+
+th
+{
+    background-color: rgb(36, 36, 36);
+}
+
+tr:nth-child(2n)
+{
+    background-color: rgb(117, 117, 117);
+}
+
+tr:nth-child(2n - 1)
+{
+    background-color: rgb(58, 58, 58);
+}
+
+.adminActionButton, #findUserButton
+{
+    padding: 2px;
+    background-color: rgb(56, 59, 16);
+    border: 2px solid rgb(255, 245, 152);
+    border-radius: 20px;
+    color: white;
+    transition: background-color 5s linear;
+    transition: color .1s linear;
+    width: 150px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.adminActionButton:hover, #findUserButton:hover
+{
+    background-color: rgb(255, 245, 152);
+    color: black;
+    box-shadow: 1px 1px 15px rgb(255, 245, 152);
+}
+
+.adminActionButton:active, #findUserButton:active
+{
+    background-color: rgb(56, 59, 16);
+    color: white;
+}
+
+.hiddenTable
+{
+    display: none;
+}
+
+.navItem.admin
+{
+    display: none;
+}
+
+.navPan
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(44, 44, 44);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navItem > a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navItem > a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+.filesList, .requestsList
+{
+    margin: 0 auto;
+    width: 80% ;
+}
+
+#newFileForm
+{
+    margin: 0 auto;
+    margin-top: 50px;
+}
